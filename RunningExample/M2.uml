@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zakssIcoEeuGAIoEX1Ar5Q" name="University">
+  <packagedElement xmi:type="uml:Class" xmi:id="_Mg7GEIcpEeuGAIoEX1Ar5Q" name="Scholar" isAbstract="true">
+    <ownedAttribute xmi:id="_EDZogA_TEeyfZdInxg3ToA" name="name"/>
+    <ownedAttribute xmi:id="_0kps4Bl-Ee2YG76tOzBZ3A" name="laboratory"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PHxzkIcpEeuGAIoEX1Ar5Q" name="Apprentice">
+    <ownedAttribute xmi:id="__l7Q4EoYEey9o-0YZwEvJQ" name="id"/>
+    <ownedAttribute xmi:id="_-YovcBl-Ee2YG76tOzBZ3A" name="average"/>
+  </packagedElement>
+</uml:Package>

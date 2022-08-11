@@ -1,0 +1,213 @@
+import Version1 : "M1.uml";
+import Version2 : "M2.uml";
+import Version3 : "M3.uml";
+import TargetModel : "M1+M2+M3.uml";
+import BaseModel : "M0.uml";
+
+
+pre{
+	"NML => Merging started . . . ".println();
+}
+
+//////////////////////////////////////////////////////////////////////////////////Octopus With Base Version
+
+rule MergeModel_Octopus_1
+	mergeOctopus v1 : Version1!Model 
+	with v2 : Version2!Model , v3 : Version3!Model 
+	withBase v0 : BaseModel!Model
+	into vt : TargetModel!Model {
+		vt.name = v1.name;
+		v1.eContainer.equivalent(vt); 
+}
+
+rule MergePackage_Octopus_1
+	mergeOctopus v1 : Version1!Package 
+	with v2 : Version2!Package , v3 : Version3!Package 
+	withBase v0 : BaseModel!Package
+	into vt : TargetModel!Package {
+		vt.name = v1.name;
+		v1.eContainer.equivalent(vt); 
+}
+
+rule MergeClass_Octopus_1
+	mergeOctopus v1 : Version1!Class 
+	with v2 : Version2!Class , v3 : Version3!Class 
+	withBase v0 : BaseModel!Class
+	into vt : TargetModel!Class {
+		vt.name = v2.name ;
+		vt.isAbstract = v2.isAbstract;
+		vt.Visibility = v2.Visibility ; 
+		vt.package = v1.package.equivalent() ; 
+}
+
+rule MergeProperty_Octopus_1
+	mergeOctopus v1 : Version1!Property 
+	with v2 : Version2!Property , v3 : Version3!Property 
+	withBase v0 : BaseModel!Property
+	into vt : TargetModel!Property {
+	vt.name = v3.name;
+	v3.eContainer.equivalent().ownedAttributes.add(vt); 
+}
+
+//////////////////////////////////////////////////////////////////////////////////Octopus WithOut Base Version
+
+rule MergeModel_Octopus_2
+	mergeOctopus v1 : Version1!Model 
+	with v2 : Version2!Model , v3 : Version3!Model
+	into vt : TargetModel!Model {
+		vt.name = v1.name;
+		v1.eContainer.equivalent(vt); 
+}
+
+rule MergePackage_Octopus_2
+	mergeOctopus v1 : Version1!Package 
+	with v2 : Version2!Package , v3 : Version3!Package 
+	into vt : TargetModel!Package {
+		vt.name = v1.name;
+		v1.eContainer.equivalent(vt); 
+}
+
+rule MergeClass_Octopus_2
+	mergeOctopus v1 : Version1!Class 
+	with v2 : Version2!Class , v3 : Version3!Class 
+	into vt : TargetModel!Class {
+		vt.name = v2.name ;
+		vt.isAbstract = v2.isAbstract;
+		vt.Visibility = v2.Visibility ; 
+		vt.package = v1.package.equivalent() ; 
+}  
+
+rule MergeProperty_Octopus_2
+	mergeOctopus v1 : Version1!Property 
+	with v2 : Version2!Property , v3 : Version3!Property  
+	into vt : TargetModel!Property {
+	vt.name = v2.name;
+	v2.eContainer.equivalent().ownedAttributes.add(vt); 
+} 
+
+//////////////////////////////////////////////////////////////////////////////////Ours With Base Version
+
+rule MergeModel_Ours_1
+	mergeOurs v1 : Version1!Model 
+	with v2 : Version2!Model , v3 : Version3!Model
+	withBase v0 : BaseModel!Model
+	exists_in 2
+	priority P1 : [v1, v2, v3, v0]
+	into vt : TargetModel!Model {
+		vt.name = P1.name;
+		P1.eContainer.equivalent(vt); 
+}
+
+rule MergePackage_Ours_1
+	mergeOurs v1 : Version1!Package 
+	with v2 : Version2!Package , v3 : Version3!Package
+	withBase v0 : BaseModel!Package
+	exists_in 2 
+	priority P1 : [v1, v2, v3, v0]
+	into vt : TargetModel!Package {
+		vt.name = P1.name;
+		P1.eContainer.equivalent(vt); 
+}
+
+rule MergeClass_Ours_1
+	mergeOurs v1 : Version1!Class 
+	with v2 : Version2!Class , v3 : Version3!Class
+	withBase v0 : BaseModel!Class 
+	exists_in 2
+	priority P1 : [v3, v1, v2, v0]
+	into vt : TargetModel!Class {	
+		vt.name = P1.name ;
+		vt.isAbstract = P1.isAbstract;
+		vt.Visibility = P1.Visibility ; 
+		vt.package = P1.package.equivalent() ;  
+}
+
+rule MergeProperty_Ours_1
+	mergeOurs v1 : Version1!Property 
+	with v2 : Version2!Property , v3 : Version3!Property 
+	withBase v0 : BaseModel!Property 
+	exists_in 1
+	priority P1 : [v0, v1, v2, v3]
+	into vt : TargetModel!Property {	
+	vt.name = P1.name;
+	P1.eContainer.equivalent().ownedAttributes.add(vt);
+}
+
+//////////////////////////////////////////////////////////////////////////////////Ours WithOut Base Version
+
+rule MergeModel_Ours_2
+	mergeOurs v1 : Version1!Model 
+	with v2 : Version2!Model , v3 : Version3!Model
+	priority P1 : [v1, v2, v3]
+	into vt : TargetModel!Model {
+		vt.name = P1.name;
+		P1.eContainer.equivalent(vt);
+}
+
+rule MergePackage_Ours_2
+	mergeOurs v1 : Version1!Package 
+	with v2 : Version2!Package , v3 : Version3!Package
+	priority P1 : [v1, v2, v3]
+	into vt : TargetModel!Package {
+		vt.name = P1.name;
+		P1.eContainer.equivalent(vt);
+}
+
+rule MergeClass_Ours_2
+	mergeOurs v1 : Version1!Class 
+	with v2 : Version2!Class , v3 : Version3!Class 
+	priority P1 : [v1, v2, v3] , P2 : [v3, v2, v1]
+	into vt : TargetModel!Class {	
+	vt.name = P2.name  ;
+	P1.eContainer.equivalent().packagedElement.add(vt); 	
+}
+
+rule MergeProperty_Ours_2
+	mergeOurs v1 : Version1!Property 
+	with v2 : Version2!Property , v3 : Version3!Property
+	priority P1 : [v2, v1, v3] , P2 : [v3, v2, v1]
+	into vt : TargetModel!Property {	
+	vt.name = P1.name;
+	P1.eContainer.equivalent().ownedAttributes.add(vt); 
+}
+
+//////////////////////////////////////////////////////////////////////////////////Transfer
+
+rule Model_Transfer
+	transfer s : Source!Model
+	from Source : (Version1, Version2, Version3)
+	to vt : TargetModel!Model {
+		vt.name = s.name ;
+		vt.isAbstract = s.isAbstract ;
+		s.eContainer.equivalent(vt);
+}
+
+rule Package_Transfer
+	transfer s : Source!Package
+	from Source : (Version1, Version2, Version3)
+	to vt : TargetModel!Package {
+		vt.name = s.name ;
+		vt.isAbstract = s.isAbstract ;
+		s.eContainer.equivalent(vt);
+}
+
+rule Class_Transfer
+	transfer s : Source!Class
+	from Source : (Version1, Version2, Version3)
+	to vt : TargetModel!Class {
+		vt.name = s.name ;
+		vt.isAbstract = s.isAbstract ;
+		s.eContainer.equivalent().packagedElement.add(vt);
+}
+
+rule Property_Transfer
+	transfer s : Source!Property
+	from Source : (Version1, Version2, Version3)
+	to vt : TargetModel!Property {
+	 vt.name = s.name;
+	 s.eContainer.equivalent().ownedAttributes.add(vt);
+}
+
+post{
+	"NML => Merging ended . . . ".println();
+}
