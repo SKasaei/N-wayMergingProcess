@@ -6,3 +6,6 @@
 5) Add it to the Epsilon Project in the workspace;
 6) Update Epsilon files by additional files;
 7) Run the project as Eclipse Application.
+
+# NPM For The Running Example
+![OnClose Example](RunningExample/NMP.gif)
