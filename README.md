@@ -7,5 +7,5 @@
 6) Update Epsilon files by additional files;
 7) Run the project as Eclipse Application.
 
-# NPM execution flow for an example
+# NPM Execution Flow for the Running Example
 ![OnClose Example](RunningExample/NMP.gif)
