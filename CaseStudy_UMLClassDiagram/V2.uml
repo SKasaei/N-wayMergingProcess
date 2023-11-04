@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_FlLT4P_mEeuX6KmBx9THyw" name="University">
+  <packagedElement xmi:type="uml:Class" xmi:id="_JO2wUP_mEeuX6KmBx9THyw" name="Student">
+    <ownedAttribute xmi:id="_C5yH0BrFEeyNTqk9omo5nQ" name="studentNumber"/>
+    <ownedAttribute xmi:id="_Tf-tkG2REeyvharirEDkQw" name="Average"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rrur8AW_EeymR5YPnIK7og" name="Professor"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-uL1sErKEeyD6uG_PakgtA" name="Staff">
+    <ownedAttribute xmi:id="_bTLNYEvBEey5UY9TqpIx-A" name="staffID"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MBHvUG2REeyvharirEDkQw" name="Seminar"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MBJkgG2REeyvharirEDkQw" name="Course">
+    <ownedAttribute xmi:id="_MBJkgW2REeyvharirEDkQw" name="courseName"/>
+    <ownedAttribute xmi:id="_W8YGgG2SEeyvharirEDkQw" name="courseUnit"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gSQtQG2REeyvharirEDkQw" name="instruct"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ibGCAG2REeyvharirEDkQw" name="take"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iicAIG2REeyvharirEDkQw" name="organize"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ipFasG2REeyvharirEDkQw" name="request"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_d4EGQG2SEeyvharirEDkQw" name="Grade"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jqszQG2SEeyvharirEDkQw" name="has"/>
+</uml:Package>

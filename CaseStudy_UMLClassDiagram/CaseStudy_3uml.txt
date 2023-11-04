@@ -1,0 +1,60 @@
+Windows 10
+Java HotSpot(TM) 64-Bit Server VM 25.221-b11
+Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+Logical processors: 8
+Xms: 188 MB
+Xmx: 3618 MB
+Starting execution at Jan 5, 2022 1:21:06 PM
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+ Matching with base version time is:0 days, 0 hours, 0 minutes, 0 seconds, 13 milliseconds,
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+_______USER RESTRICTION_______
+Element in Base Version = org.eclipse.uml2.uml.internal.impl.ClassImpl@1fedff4e (name: Seminar, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+Rule Type = Ours
+Names of Input models = [Version2]
+Exists In Number = 2
+Models In Match = 1
+Result = Element Ignore
+-------------------------------------------------
+_______USER RESTRICTION_______
+Element in Base Version = org.eclipse.uml2.uml.internal.impl.PropertyImpl@1cf43e96 (name: staffID, visibility: <unset>) (isLeaf: false) (isStatic: false) (isOrdered: false, isUnique: true, isReadOnly: false) (aggregation: none, isDerived: false, isDerivedUnion: false, isID: false)
+Rule Type = Ours
+Names of Input models = [Version2]
+Exists In Number = 2
+Models In Match = 1
+Result = Element Ignore
+-------------------------------------------------
+_______USER RESTRICTION_______
+Element in Base Version = org.eclipse.uml2.uml.internal.impl.AssociationImpl@336e6795 (name: request, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isDerived: false)
+Rule Type = Ours
+Names of Input models = [Version2]
+Exists In Number = 2
+Models In Match = 1
+Result = Element Ignore
+-------------------------------------------------
+_______CONFLICT PREVENTION_______
+Element in Input Version = org.eclipse.uml2.uml.internal.impl.PropertyImpl@3d96cdaa (name: seminar, visibility: <unset>) (isLeaf: false) (isStatic: false) (isOrdered: false, isUnique: true, isReadOnly: false) (aggregation: none, isDerived: false, isDerivedUnion: false, isID: false)
+Rule Type = Transfer
+Result = Element Ignore
+-------------------------------------------------
+_______CONFLICT PREVENTION_______
+Element in Input Version = org.eclipse.uml2.uml.internal.impl.PropertyImpl@494573bc (name: student, visibility: <unset>) (isLeaf: false) (isStatic: false) (isOrdered: false, isUnique: true, isReadOnly: false) (aggregation: none, isDerived: false, isDerivedUnion: false, isID: false)
+Rule Type = Transfer
+Result = Element Ignore
+-------------------------------------------------
+Total elements involved in merging process from base version and 3 input models = 67
+Total ignored elements during merging process = 8
+-------------------------------------------------
+-------------------------------------------------
+ Matching with out base version time is:0 days, 0 hours, 0 minutes, 0 seconds, 7 milliseconds
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+ Merging time is: 0 days, 0 hours, 0 minutes, 0 seconds, 36 milliseconds
+-------------------------------------------------
+-------------------------------------------------
