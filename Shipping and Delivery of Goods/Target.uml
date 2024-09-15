@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_yFNqAFRBEeyeaYVVkTauTw"/>
+  <uml:Model name="V1">
+    <packagedElement xsi:type="uml:Package" name="Team1">
+      <packagedElement xsi:type="uml:Class" name="User">
+        <ownedAttribute name="phoneNumber"/>
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="userName"/>
+        <ownedAttribute name="password"/>
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="gender"/>
+        <ownedAttribute name="email"/>
+        <ownedAttribute name="address"/>
+        <ownedAttribute name="wallet"/>
+        <ownedAttribute name="age"/>
+        <ownedAttribute name="lastName"/>
+        <ownedAttribute name="bankCardNumber"/>
+        <ownedAttribute name="stock"/>
+        <ownedAttribute name="nationalCode"/>
+        <ownedAttribute name="active"/>
+        <ownedAttribute name="access degree"/>
+        <ownedAttribute name="photo"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Shipper">
+        <ownedAttribute name="score"/>
+        <ownedAttribute name="shippingReport"/>
+        <ownedAttribute name="workingLocation"/>
+        <ownedAttribute name="insurance"/>
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="bankAccountNumber"/>
+        <ownedAttribute name="monthlyIncome"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Admin">
+        <ownedAttribute name="access"/>
+        <ownedAttribute name="rearuitment"/>
+        <ownedAttribute name="managerControl"/>
+        <ownedAttribute name="policy"/>
+        <ownedAttribute name="makeDeal"/>
+        <ownedAttribute name="manageMainHouse"/>
+        <ownedAttribute name="monthlyIncome"/>
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="nationalNumber"/>
+        <ownedAttribute name="gender"/>
+        <ownedAttribute name="birthDate"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Location">
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="latitude"/>
+        <ownedAttribute name="logitude"/>
+        <ownedAttribute name="cordinate"/>
+        <ownedAttribute name="address"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Client">
+        <ownedAttribute name="internationalBankAccountNumber"/>
+        <ownedAttribute name="signature"/>
+        <ownedAttribute name="zipCode"/>
+        <ownedAttribute name="credit"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Company">
+        <ownedAttribute name="systemEfficiency"/>
+        <ownedAttribute name="informationDelay"/>
+        <ownedAttribute name="orderHistory"/>
+        <ownedAttribute name="timeEstimate"/>
+        <ownedAttribute name="score"/>
+        <ownedAttribute name="isSelfReceive"/>
+        <ownedAttribute name="bankAccountNumber"/>
+        <ownedAttribute name="monthlyIncome"/>
+        <ownedAttribute name="maxWeight"/>
+        <ownedAttribute name="maxDimension"/>
+        <ownedAttribute name="code"/>
+        <ownedAttribute name="name"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Consignment">
+        <ownedAttribute name="weight"/>
+        <ownedAttribute name="value"/>
+        <ownedAttribute name="specialBox"/>
+        <ownedAttribute name="type"/>
+        <ownedAttribute name="place"/>
+        <ownedAttribute name="destination"/>
+        <ownedAttribute name="source"/>
+        <ownedAttribute name="trackingCode"/>
+        <ownedAttribute name="dimension"/>
+        <ownedAttribute name="description"/>
+        <ownedAttribute name="photo"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Order">
+        <ownedAttribute name="trackingCode"/>
+        <ownedAttribute name="location"/>
+        <ownedAttribute name="cost"/>
+        <ownedAttribute name="type"/>
+        <ownedAttribute name="status"/>
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="dateOfRegistration"/>
+        <ownedAttribute name="senderReceiverSpec"/>
+        <ownedAttribute name="shipperType"/>
+        <ownedAttribute name="howToSend"/>
+        <ownedAttribute name="orderAmount"/>
+        <ownedAttribute name="price"/>
+        <ownedAttribute name="reservveBase"/>
+        <ownedAttribute name="deliveryTime"/>
+        <ownedAttribute name="package"/>
+        <ownedAttribute name="reports"/>
+        <ownedAttribute name="sender"/>
+        <ownedAttribute name="receiver"/>
+        <ownedAttribute name="isInTown"/>
+        <ownedAttribute name="registrationTime"/>
+        <ownedAttribute name="timeEstimate"/>
+        <ownedAttribute name="photo"/>
+        <ownedAttribute name="description"/>
+        <ownedAttribute name="score"/>
+        <ownedAttribute name="trackingNumber"/>
+        <ownedAttribute name="date"/>
+        <ownedAttribute name="origin"/>
+        <ownedAttribute name="destination"/>
+        <ownedAttribute name="isExpire"/>
+        <ownedAttribute name="note"/>
+        <ownedAttribute name="assurance"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Receiver">
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="phoneNumber"/>
+        <ownedAttribute name="infoEdit"/>
+        <ownedAttribute name="history"/>
+        <ownedAttribute name="lastname"/>
+        <ownedAttribute name="conformation"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Sender">
+        <ownedAttribute name="history"/>
+        <ownedAttribute name="location"/>
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="lastname"/>
+        <ownedAttribute name="nationalCode"/>
+        <ownedAttribute name="credit"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Package">
+        <ownedAttribute name="weight"/>
+        <ownedAttribute name="volume"/>
+        <ownedAttribute name="origin"/>
+        <ownedAttribute name="destination"/>
+        <ownedAttribute name="type"/>
+        <ownedAttribute name="dimension"/>
+        <ownedAttribute name="productMaterial"/>
+        <ownedAttribute name="size"/>
+        <ownedAttribute name="length"/>
+        <ownedAttribute name="width"/>
+        <ownedAttribute name="height"/>
+        <ownedAttribute name="QRCode"/>
+        <ownedAttribute name="value"/>
+        <ownedAttribute name="postageDate"/>
+        <ownedAttribute name="deliveryDate"/>
+        <ownedAttribute name="location"/>
+        <ownedAttribute name="timeEstimate"/>
+        <ownedAttribute name="cost"/>
+        <ownedAttribute name="fastSending"/>
+        <ownedAttribute name="price"/>
+        <ownedAttribute name="condition"/>
+        <ownedAttribute name="password"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Station">
+        <ownedAttribute name="capacity"/>
+        <ownedAttribute name="location"/>
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="type"/>
+        <ownedAttribute name="orderDatabase"/>
+        <ownedAttribute name="dimension"/>
+        <ownedAttribute name="code"/>
+        <ownedAttribute name="sends"/>
+        <ownedAttribute name="receives"/>
+        <ownedAttribute name="number"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Inbox">
+        <ownedAttribute name="number"/>
+        <ownedAttribute name="length"/>
+        <ownedAttribute name="width"/>
+        <ownedAttribute name="height"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Customer">
+        <ownedAttribute name="address"/>
+        <ownedAttribute name="postalCode"/>
+        <ownedAttribute name="walletAmount"/>
+        <ownedAttribute name="parcelNumber"/>
+        <ownedAttribute name="birthDate"/>
+        <ownedAttribute name="gender"/>
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="nationalNumber"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Transaction">
+        <ownedAttribute name="date"/>
+        <ownedAttribute name="type"/>
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="price"/>
+        <ownedAttribute name="sourceBankAccount"/>
+        <ownedAttribute name="destinationBankAccount"/>
+        <ownedAttribute name="description"/>
+        <ownedAttribute name="senderName"/>
+        <ownedAttribute name="receiverName"/>
+        <ownedAttribute name="currency"/>
+        <ownedAttribute name="fee"/>
+        <ownedAttribute name="source"/>
+        <ownedAttribute name="destination"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Address">
+        <ownedAttribute name="postalCode"/>
+        <ownedAttribute name="location"/>
+        <ownedAttribute name="plaqueNumber"/>
+        <ownedAttribute name="city"/>
+        <ownedAttribute name="building"/>
+        <ownedAttribute name="street"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Locker">
+        <ownedAttribute name="capacity"/>
+        <ownedAttribute name="address"/>
+        <ownedAttribute name="fee"/>
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="boxInSide"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Association" name="Request"/>
+      <packagedElement xsi:type="uml:Association" name="Report"/>
+      <packagedElement xsi:type="uml:Association" name="Accept"/>
+      <packagedElement xsi:type="uml:Association" name="Locate"/>
+      <packagedElement xsi:type="uml:Association" name="Suggest"/>
+      <packagedElement xsi:type="uml:Association" name="Pay"/>
+      <packagedElement xsi:type="uml:Association" name="FeedBack"/>
+      <packagedElement xsi:type="uml:Association" name="Send"/>
+      <packagedElement xsi:type="uml:Association" name="Transfer"/>
+      <packagedElement xsi:type="uml:Association" name="View"/>
+      <packagedElement xsi:type="uml:Association" name="Get"/>
+      <packagedElement xsi:type="uml:Association" name="Add"/>
+      <packagedElement xsi:type="uml:Association" name="Edit"/>
+      <packagedElement xsi:type="uml:Association" name="Deliver"/>
+      <packagedElement xsi:type="uml:Association" name="Receive"/>
+      <packagedElement xsi:type="uml:Association" name="Cancel"/>
+      <packagedElement xsi:type="uml:Class" name="Wallet">
+        <ownedAttribute name="balance"/>
+        <ownedAttribute name="transactionHistory"/>
+        <ownedAttribute name="discounts"/>
+        <ownedAttribute name="bankAccounts"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Report">
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="description"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Employee">
+        <ownedAttribute name="workShift"/>
+        <ownedAttribute name="score"/>
+        <ownedAttribute name="personSide"/>
+        <ownedAttribute name="salary"/>
+        <ownedAttribute name="activitySection"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Worker">
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="BHCode"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Registration">
+        <ownedAttribute name="nationalCode"/>
+        <ownedAttribute name="insuranceCode"/>
+        <ownedAttribute name="systemCode"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Warehouse">
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="location"/>
+        <ownedAttribute name="employee"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Massage">
+        <ownedAttribute name="orderCancel"/>
+        <ownedAttribute name="returnInfo"/>
+        <ownedAttribute name="nearDestinationNotice"/>
+        <ownedAttribute name="informationDelay"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Recipient">
+        <ownedAttribute name="signature"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Transport specialist">
+        <ownedAttribute name="delivery"/>
+        <ownedAttribute name="map"/>
+        <ownedAttribute name="path"/>
+        <ownedAttribute name="status"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Company officials">
+        <ownedAttribute name="supportNumber"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Stands">
+        <ownedAttribute name="place"/>
+        <ownedAttribute name="code"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Fingerprint scanner">
+        <ownedAttribute name="fingerprint"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Consignment delivery">
+        <ownedAttribute name="deadline"/>
+        <ownedAttribute name="amount"/>
+        <ownedAttribute name="date"/>
+        <ownedAttribute name="status"/>
+        <ownedAttribute name="history"/>
+        <ownedAttribute name="timeToStart"/>
+        <ownedAttribute name="cost"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Advertisement">
+        <ownedAttribute name="description"/>
+        <ownedAttribute name="cost"/>
+        <ownedAttribute name="viewLimit"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Vehicle">
+        <ownedAttribute name="plate"/>
+        <ownedAttribute name="model"/>
+        <ownedAttribute name="brand"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Shelf">
+        <ownedAttribute name="status"/>
+        <ownedAttribute name="number"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Courier">
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="lastname"/>
+        <ownedAttribute name="nationalCode"/>
+        <ownedAttribute name="credit"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Feedback">
+        <ownedAttribute name="rate"/>
+        <ownedAttribute name="content"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Delivery info">
+        <ownedAttribute name="paymentAmount"/>
+        <ownedAttribute name="paymentStatus"/>
+        <ownedAttribute name="location"/>
+        <ownedAttribute name="acceptTime"/>
+        <ownedAttribute name="deliveryTime"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Delivery company">
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="number"/>
+        <ownedAttribute name="postalCode"/>
+        <ownedAttribute name="bankAccount"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Support system">
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="lastname"/>
+        <ownedAttribute name="nationalCode"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Suspension info">
+        <ownedAttribute name="duration"/>
+        <ownedAttribute name="reason"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Digital wallet">
+        <ownedAttribute name="amount"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Comment">
+        <ownedAttribute name="date"/>
+        <ownedAttribute name="text"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="CV">
+        <ownedAttribute name="background"/>
+        <ownedAttribute name="date"/>
+        <ownedAttribute name="size"/>
+        <ownedAttribute name="confirmation"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Contract">
+        <ownedAttribute name="condition"/>
+        <ownedAttribute name="period"/>
+        <ownedAttribute name="workingHours"/>
+        <ownedAttribute name="salary"/>
+        <ownedAttribute name="amountLeave"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Discount code">
+        <ownedAttribute name="code"/>
+        <ownedAttribute name="value"/>
+        <ownedAttribute name="expirationDate"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Carrier">
+        <ownedAttribute name="nationalCode"/>
+        <ownedAttribute name="photo"/>
+        <ownedAttribute name="birthDate"/>
+        <ownedAttribute name="fingerprint"/>
+        <ownedAttribute name="confirmation"/>
+        <ownedAttribute name="dateRegistration"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Manager">
+        <ownedAttribute name="level"/>
+        <ownedAttribute name="exprience"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Supporting system"/>
+      <packagedElement xsi:type="uml:Class" name="Development team">
+        <ownedAttribute name="activity"/>
+        <ownedAttribute name="department"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Message">
+        <ownedAttribute name="text"/>
+        <ownedAttribute name="date"/>
+        <ownedAttribute name="userName"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Post office">
+        <ownedAttribute name="capacity"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Interaction history">
+        <ownedAttribute name="date"/>
+        <ownedAttribute name="discription"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Customer interaction history">
+        <ownedAttribute name="order"/>
+        <ownedAttribute name="value"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Shipping interaction history">
+        <ownedAttribute name="assignment"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Ticket">
+        <ownedAttribute name="date"/>
+        <ownedAttribute name="senderId"/>
+        <ownedAttribute name="agentId"/>
+        <ownedAttribute name="id"/>
+        <ownedAttribute name="description"/>
+        <ownedAttribute name="isUrgent"/>
+        <ownedAttribute name="priority"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Announcement">
+        <ownedAttribute name="title"/>
+        <ownedAttribute name="isUrgent"/>
+        <ownedAttribute name="attachment"/>
+        <ownedAttribute name="status"/>
+        <ownedAttribute name="tag"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Managment">
+        <ownedAttribute name="level"/>
+        <ownedAttribute name="status"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="Financial">
+        <ownedAttribute name="balance"/>
+        <ownedAttribute name="cardNumber"/>
+        <ownedAttribute name="insurance"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Class" name="support">
+        <ownedAttribute name="name"/>
+        <ownedAttribute name="birthDate"/>
+        <ownedAttribute name="nationalNumber"/>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Association" name="SubmitOrder"/>
+      <packagedElement xsi:type="uml:Association" name="AssigningShipper"/>
+      <packagedElement xsi:type="uml:Association" name="ShippingToReceiver"/>
+      <packagedElement xsi:type="uml:Association" name="Shipping"/>
+      <packagedElement xsi:type="uml:Association" name="SubmitNewShipping"/>
+      <packagedElement xsi:type="uml:Association" name="ConsignmentTracking"/>
+      <packagedElement xsi:type="uml:Association" name="Delivery"/>
+      <packagedElement xsi:type="uml:Association" name="Fingerprint"/>
+      <packagedElement xsi:type="uml:Association" name="MoveStation"/>
+      <packagedElement xsi:type="uml:Association" name="Authentication"/>
+      <packagedElement xsi:type="uml:Association" name="ReturnConsignment"/>
+      <packagedElement xsi:type="uml:Association" name="Distance"/>
+      <packagedElement xsi:type="uml:Association" name="Verification"/>
+      <packagedElement xsi:type="uml:Association" name="Incapability"/>
+      <packagedElement xsi:type="uml:Association" name="GetReport"/>
+      <packagedElement xsi:type="uml:Association" name="Register"/>
+      <packagedElement xsi:type="uml:Association" name="Refund"/>
+      <packagedElement xsi:type="uml:Association" name="Score"/>
+      <packagedElement xsi:type="uml:Association" name="Control"/>
+      <packagedElement xsi:type="uml:Association" name="Lives"/>
+      <packagedElement xsi:type="uml:Association" name="Record"/>
+      <packagedElement xsi:type="uml:Association" name="Determine"/>
+      <packagedElement xsi:type="uml:Association" name="Track"/>
+      <packagedElement xsi:type="uml:Association" name="Reserve"/>
+      <packagedElement xsi:type="uml:Association" name="Search"/>
+      <packagedElement xsi:type="uml:Association" name="Access"/>
+      <packagedElement xsi:type="uml:Association" name="Suspend"/>
+      <packagedElement xsi:type="uml:Association" name="Sort"/>
+      <packagedElement xsi:type="uml:Association" name="Submit"/>
+      <packagedElement xsi:type="uml:Association" name="Sign"/>
+      <packagedElement xsi:type="uml:Association" name="Assign"/>
+      <packagedElement xsi:type="uml:Association" name="Expire"/>
+      <packagedElement xsi:type="uml:Association" name="Define"/>
+      <packagedElement xsi:type="uml:Association" name="Store"/>
+      <packagedElement xsi:type="uml:Association" name="Choose"/>
+      <packagedElement xsi:type="uml:Association" name="Chat"/>
+      <packagedElement xsi:type="uml:Association" name="Use"/>
+      <packagedElement xsi:type="uml:Association" name="Remove"/>
+      <packagedElement xsi:type="uml:Association" name="Change"/>
+      <packagedElement xsi:type="uml:Association" name="Complete"/>
+      <packagedElement xsi:type="uml:Association" name="Block"/>
+      <packagedElement xsi:type="uml:Association" name="Give"/>
+      <packagedElement xsi:type="uml:Association" name="Delete"/>
+      <packagedElement xsi:type="uml:Association" name="Complain"/>
+      <packagedElement xsi:type="uml:Association" name="GetStatus"/>
+      <packagedElement xsi:type="uml:Association" name="Increase"/>
+      <packagedElement xsi:type="uml:Association" name="Decrease"/>
+      <packagedElement xsi:type="uml:Association" name="Move"/>
+      <packagedElement xsi:type="uml:Association" name="Showcargos"/>
+      <packagedElement xsi:type="uml:Association" name="ShowState"/>
+      <packagedElement xsi:type="uml:Association" name="Order"/>
+    </packagedElement>
+  </uml:Model>
+  <uml:Property name="gender"/>
+</xmi:XMI>

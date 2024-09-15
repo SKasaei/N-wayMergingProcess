@@ -1,0 +1,308 @@
+
+import Version1 : "V1.uml";
+import Version2 : "V2.uml";
+import Version3 : "V3.uml";
+import Version4 : "V4.uml";
+import Version5 : "V5.uml";
+import Version6 : "V6.uml";
+import Version7 : "V7.uml";
+
+import TargetModel : "Target.uml";
+import BaseModel : "Base.uml";
+
+pre{
+	"NML => MergingHospital started . . . ".println();
+}
+
+//////////////////////////////////////////////////////////////////////////////////Octopus With Base Version
+
+rule MergeModel_Octopus_1
+	mergeOctopus v1 : Version1!Model 
+	with v2 : Version2!Model , v3 : Version3!Model , v4 : Version4!Model , v5 : Version5!Model , v6 : Version6!Model , v7 : Version7!Model 
+	withBase v0 : BaseModel!Model
+	into vt : TargetModel!Model {
+	
+		vt.name = v2.name;
+		
+}
+
+rule MergePackage_Octopus_1
+	mergeOctopus v1 : Version1!Package 
+	with v2 : Version2!Package , v3 : Version3!Package , v4 : Version4!Package , v5 : Version5!Package , v6 : Version6!Package , v7 : Version7!Package 
+	withBase v0 : BaseModel!Package
+	into vt : TargetModel!Package {
+	
+		vt.name = v1.name;
+		v1.eContainer.equivalent().packagedElement.add(vt);  
+}
+
+rule MergeClass_Octopus_1
+	mergeOctopus v1 : Version1!Class 
+	with v2 : Version2!Class , v3 : Version3!Class , v4 : Version4!Class , v5 : Version5!Class , v6 : Version6!Class , v7 : Version7!Class 
+	withBase v0 : BaseModel!Class
+	into vt : TargetModel!Class {
+	
+		vt.name = v2.name ;
+		vt.package = v1.package.equivalent() ; 
+}
+
+rule MergeProperty_Octopus_1
+	mergeOctopus v1 : Version1!Property 
+	with v2 : Version2!Property , v3 : Version3!Property , v4 : Version4!Property , v5 : Version5!Property , v6 : Version6!Property , v7 : Version7!Property 
+	withBase v0 : BaseModel!Property
+	into vt : TargetModel!Property {
+	
+	vt.name = v3.name;
+	v3.eContainer.equivalent().ownedAttributes.add(vt); 
+
+}
+
+rule MergeAssociation_Octopus_1
+	mergeOctopus v1 : Version1!Association 
+	with v2 : Version2!Association , v3 : Version3!Association , v4 : Version4!Association , v5 : Version5!Association , v6 : Version6!Association , v7 : Version7!Association 
+	withBase v0 : BaseModel!Association
+	into vt : TargetModel!Association {
+	
+	vt.name = v3.name;
+	v3.eContainer.equivalent().packagedElement.add(vt); 
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////Octopus WithOut Base Version
+
+rule MergeModel_Octopus_2
+	mergeOctopus v1 : Version1!Model 
+	with v2 : Version2!Model , v3 : Version3!Model  , v4 : Version4!Model , v5 : Version5!Model , v6 : Version6!Model , v7 : Version7!Model 
+
+	into vt : TargetModel!Model {
+	
+		vt.name = v1.name;
+		 
+}
+
+rule MergePackage_Octopus_2
+	mergeOctopus v1 : Version1!Package 
+	with v2 : Version2!Package , v3 : Version3!Package  , v4 : Version4!Package , v5 : Version5!Package , v6 : Version6!Package , v7 : Version7!Package 
+
+	into vt : TargetModel!Package {
+	
+		vt.name = v1.name;
+		v1.eContainer.equivalent().packagedElement.add(vt);  
+		  
+}
+
+rule MergeClass_Octopus_2
+	mergeOctopus v1 : Version1!Class 
+	with v2 : Version2!Class , v3 : Version3!Class , v4 : Version4!Class , v5 : Version5!Class , v6 : Version6!Class , v7 : Version7!Class 
+
+	into vt : TargetModel!Class {
+	
+		vt.name = v1.name ;
+		vt.package = v1.package.equivalent() ;
+}    
+
+rule MergeProperty_Octopus_2
+	mergeOctopus v1 : Version1!Property 
+	with v2 : Version2!Property , v3 : Version3!Property  , v4 : Version4!Property , v5 : Version5!Property , v6 : Version6!Property , v7 : Version7!Property 
+
+	into vt : TargetModel!Property {
+	
+	vt.name = v2.name;
+	v2.eContainer.equivalent().ownedAttributes.add(vt); 
+
+} 
+
+rule MergeAssociation_Octopus_2
+	mergeOctopus v1 : Version1!Association 
+	with v2 : Version2!Association , v3 : Version3!Association  , v4 : Version4!Association , v5 : Version5!Association , v6 : Version6!Association , v7 : Version7!Association 
+
+	into vt : TargetModel!Association {
+	
+	vt.name = v2.name;
+	v2.eContainer.equivalent().packagedElement.add(vt); 
+
+} 
+
+//////////////////////////////////////////////////////////////////////////////////Ours With Base Version
+
+rule MergeModel_Ours_1
+	mergeOurs v1 : Version1!Model 
+	with v2 : Version2!Model , v3 : Version3!Model , v4 : Version4!Model , v5 : Version5!Model , v6 : Version6!Model , v7 : Version7!Model 
+	withBase v0 : BaseModel!Model
+	exists_in 2 
+	priority P1 : [v1, v2, v3, v4, v5, v6, v7, v0]
+	into vt : TargetModel!Model {
+
+		vt.name = P1.name;
+		
+}
+
+rule MergePackage_Ours_1
+	mergeOurs v1 : Version1!Package 
+	with v2 : Version2!Package , v3 : Version3!Package , v4 : Version4!Package , v5 : Version5!Package , v6 : Version6!Package , v7 : Version7!Package 
+	withBase v0 : BaseModel!Package
+	exists_in 2 
+	priority P1 : [v1, v2, v3, v4, v5, v6, v7, v0]
+	into vt : TargetModel!Package {
+
+		vt.name = P1.name;
+		P1.eContainer.equivalent().packagedElement.add(vt); 
+}
+
+rule MergeClass_Ours_1
+	mergeOurs v1 : Version1!Class 
+	with v2 : Version2!Class , v3 : Version3!Class , v4 : Version4!Class , v5 : Version5!Class , v6 : Version6!Class , v7 : Version7!Class 
+	withBase v0 : BaseModel!Class 
+	exists_in 4
+	priority P1 : [v3, v1, v2, v4, v5, v6, v7, v0]
+	into vt : TargetModel!Class {	
+	
+	vt.name = P1.name;
+	P1.eContainer.equivalent().packagedElement.add(vt); 
+		
+}
+
+rule MergeProperty_Ours_1
+	mergeOurs v1 : Version1!Property 
+	with v2 : Version2!Property , v3 : Version3!Property , v4 : Version4!Property , v5 : Version5!Property , v6 : Version6!Property , v7 : Version7!Property 
+	withBase v0 : BaseModel!Property 
+	exists_in 2
+	priority P1 : [v0, v1, v2, v3, v4, v5, v6, v7]
+	into vt : TargetModel!Property {	
+	
+	vt.name = P1.name;
+	P1.eContainer.equivalent().ownedAttributes.add(vt);
+}
+
+rule MergeAssociation_Ours_1
+	mergeOurs v1 : Version1!Association 
+	with v2 : Version2!Association , v3 : Version3!Association , v4 : Version4!Association , v5 : Version5!Association , v6 : Version6!Association , v7 : Version7!Association 
+	withBase v0 : BaseModel!Association 
+	exists_in 2
+	priority P1 : [v0, v1, v2, v3, v4, v5, v6, v7]
+	into vt : TargetModel!Association {	
+	
+	vt.name = P1.name;
+	P1.eContainer.equivalent().packagedElement.add(vt);
+}
+
+//////////////////////////////////////////////////////////////////////////////////Ours WithOut Base Version
+
+rule MergeModel_Ours_2
+	mergeOurs v1 : Version1!Model 
+	with v2 : Version2!Model , v3 : Version3!Model , v4 : Version4!Model , v5 : Version5!Model , v6 : Version6!Model , v7 : Version7!Model 
+	
+	priority P1 : [v1, v2, v3, v4, v5, v6, v7]
+	into vt : TargetModel!Model {
+
+		vt.name = P1.name;
+		
+}
+
+rule MergePackage_Ours_2
+	mergeOurs v1 : Version1!Package 
+	with v2 : Version2!Package , v3 : Version3!Package , v4 : Version4!Package , v5 : Version5!Package , v6 : Version6!Package , v7 : Version7!Package
+	
+	priority P1 : [v1, v2, v3, v4, v5, v6, v7]
+	into vt : TargetModel!Package {
+
+		vt.name = P1.name;
+		P1.eContainer.equivalent().packagedElement.add(vt); 
+		
+}
+
+rule MergeClass_Ours_2
+	mergeOurs v1 : Version1!Class 
+	with v2 : Version2!Class , v3 : Version3!Class , v4 : Version4!Class , v5 : Version5!Class , v6 : Version6!Class , v7 : Version7!Class 
+	
+	priority P1 : [v1, v2, v3, v4, v5, v6, v7, v8] , P2 : [v6, v7, v5, v4, v3, v2, v1]
+	into vt : TargetModel!Class {	
+	
+	vt.name = P2.name  ;
+	P1.eContainer.equivalent().packagedElement.add(vt); 
+		
+}
+
+rule MergeProperty_Ours_2
+	mergeOurs v1 : Version1!Property 
+	with v2 : Version2!Property , v3 : Version3!Property , v4 : Version4!Property , v5 : Version5!Property , v6 : Version6!Property , v7 : Version7!Property 
+	
+	priority P1 : [v2, v1, v3, v4, v5, v6, v7, v8] , P2 : [v6, v7, v5, v4, v3, v2, v1]
+	into vt : TargetModel!Property {	
+	
+	vt.name = P1.name;
+	P1.eContainer.equivalent().ownedAttributes.add(vt); 
+		
+}
+
+rule MergeAssociation_Ours_2
+	mergeOurs v1 : Version1!Association 
+	with v2 : Version2!Association , v3 : Version3!Association , v4 : Version4!Association , v5 : Version5!Association , v6 : Version6!Association , v7 : Version7!Association 
+	
+	priority P1 : [v2, v1, v3, v4, v5, v6, v7, v8] , P2 : [v6, v7, v5, v4, v3, v2, v1]
+	into vt : TargetModel!Association {	
+	
+	vt.name = P1.name;
+	P1.eContainer.equivalent().packagedElement.add(vt);
+		
+}
+
+//////////////////////////////////////////////////////////////////////////////////Transfer
+
+rule Model_Transfer
+	transfer s : Source!Model
+	from Source : (Version1, Version2, Version3, Version4, Version5, Version6, Version7)
+	to vt : TargetModel!Model {
+
+		vt.name = s.name ;
+		
+	
+}
+
+rule Package_Transfer
+	transfer s : Source!Package
+	from Source : (Version1, Version2, Version3, Version4, Version5, Version6, Version7)
+	to vt : TargetModel!Model {
+
+		vt.name = s.name ;
+		s.eContainer.equivalent().packagedElement.add(vt); 
+		 
+	
+}
+
+rule Class_Transfer
+	transfer s : Source!Class
+	from Source : (Version1, Version2, Version3, Version4, Version5, Version6, Version7)
+	to vt : TargetModel!Class {
+
+		vt.name = s.name ;
+		vt.isAbstract = s.isAbstract ;
+		s.eContainer.equivalent().packagedElement.add(vt);
+	
+}
+
+rule Property_Transfer
+	transfer s : Source!Property
+	from Source : (Version1, Version2, Version3, Version4, Version5, Version6, Version7)
+	to vt : TargetModel!Property {
+	
+
+	 vt.name = s.name;
+	 s.eContainer.equivalent().ownedAttributes.add(vt);
+	
+}
+
+rule Association_Transfer
+	transfer s : Source!Association
+	from Source : (Version1, Version2, Version3, Version4, Version5, Version6, Version7)
+	to vt : TargetModel!Association {
+	
+
+	 vt.name = s.name;
+	 s.eContainer.equivalent().packagedElement.add(vt);
+	
+}
+
+post{
+	"NML => MergingHospital ended . . . ".println();
+}

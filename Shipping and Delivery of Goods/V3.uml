@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dHGM0F9vEeyHGut-QakN3w" name="V1">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Olu4oGtQEe-cNcWgzcLmAA" name="Team3">
+    <packagedElement xmi:type="uml:Class" xmi:id="_dVwh8GtREe-cNcWgzcLmAA" name="User">
+      <ownedAttribute xmi:id="_eYfxUGtREe-cNcWgzcLmAA" name="phoneNumber"/>
+      <ownedAttribute xmi:id="_erXqAGtREe-cNcWgzcLmAA" name="name"/>
+      <ownedAttribute xmi:id="_e3urAGtREe-cNcWgzcLmAA" name="userName"/>
+      <ownedAttribute xmi:id="_e-SmAGtREe-cNcWgzcLmAA" name="password"/>
+      <ownedAttribute xmi:id="_PGxW4GtVEe-cNcWgzcLmAA" name="nationalCode"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fS6yMGtREe-cNcWgzcLmAA" name="Admin">
+      <ownedAttribute xmi:id="_fS6yMWtREe-cNcWgzcLmAA" name="monthlyIncome"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gChDIGtREe-cNcWgzcLmAA" name="Location">
+      <ownedAttribute xmi:id="_gChDIWtREe-cNcWgzcLmAA" name="cordinate"/>
+      <ownedAttribute xmi:id="_gChDImtREe-cNcWgzcLmAA" name="address"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gChqMGtREe-cNcWgzcLmAA" name="Advertisement">
+      <ownedAttribute xmi:id="_gChqMWtREe-cNcWgzcLmAA" name="description"/>
+      <ownedAttribute xmi:id="_gChqMmtREe-cNcWgzcLmAA" name="cost"/>
+      <ownedAttribute xmi:id="_gChqM2tREe-cNcWgzcLmAA" name="viewLimit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gIZosGtREe-cNcWgzcLmAA" name="Client">
+      <ownedAttribute xmi:id="_gIZosWtREe-cNcWgzcLmAA" name="credit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gIZotWtREe-cNcWgzcLmAA" name="Shipper">
+      <ownedAttribute xmi:id="_gIZotmtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_gIZot2tREe-cNcWgzcLmAA" name="score"/>
+      <ownedAttribute xmi:id="_gIZouGtREe-cNcWgzcLmAA" name="bankAccountNumber"/>
+      <ownedAttribute xmi:id="_gIZouWtREe-cNcWgzcLmAA" name="monthlyIncome"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gOCWoGtREe-cNcWgzcLmAA" name="Company">
+      <ownedAttribute xmi:id="_gOCWoWtREe-cNcWgzcLmAA" name="score"/>
+      <ownedAttribute xmi:id="_gOCWomtREe-cNcWgzcLmAA" name="isSelfReceive"/>
+      <ownedAttribute xmi:id="_gOCWo2tREe-cNcWgzcLmAA" name="bankAccountNumber"/>
+      <ownedAttribute xmi:id="_gOCWpGtREe-cNcWgzcLmAA" name="monthlyIncome"/>
+      <ownedAttribute xmi:id="_orH64GtVEe-cNcWgzcLmAA" name="maxWeight"/>
+      <ownedAttribute xmi:id="_o0bn4GtVEe-cNcWgzcLmAA" name="maxDimension"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gOCWpWtREe-cNcWgzcLmAA" name="Consignment">
+      <ownedAttribute xmi:id="_gOCWpmtREe-cNcWgzcLmAA" name="weight"/>
+      <ownedAttribute xmi:id="_gOCWp2tREe-cNcWgzcLmAA" name="dimension"/>
+      <ownedAttribute xmi:id="_gOCWqGtREe-cNcWgzcLmAA" name="description"/>
+      <ownedAttribute xmi:id="_gOCWqWtREe-cNcWgzcLmAA" name="value"/>
+      <ownedAttribute xmi:id="_xQDJUGtVEe-cNcWgzcLmAA" name="photo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gcykUGtREe-cNcWgzcLmAA" name="Vehicle">
+      <ownedAttribute xmi:id="_gcykUWtREe-cNcWgzcLmAA" name="plate"/>
+      <ownedAttribute xmi:id="_gcykUmtREe-cNcWgzcLmAA" name="model"/>
+      <ownedAttribute xmi:id="_gcykU2tREe-cNcWgzcLmAA" name="brand"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gcykVWtREe-cNcWgzcLmAA" name="Order">
+      <ownedAttribute xmi:id="_gcykVmtREe-cNcWgzcLmAA" name="isInTown"/>
+      <ownedAttribute xmi:id="_gcykV2tREe-cNcWgzcLmAA" name="trackingCode"/>
+      <ownedAttribute xmi:id="_gcykWGtREe-cNcWgzcLmAA" name="registrationTime"/>
+      <ownedAttribute xmi:id="_gcykWWtREe-cNcWgzcLmAA" name="cost"/>
+      <ownedAttribute xmi:id="_5o1ZMGtVEe-cNcWgzcLmAA" name="timeEstimate"/>
+      <ownedAttribute xmi:id="_5o1ZMWtVEe-cNcWgzcLmAA" name="photo"/>
+      <ownedAttribute xmi:id="_5o1ZMmtVEe-cNcWgzcLmAA" name="type"/>
+      <ownedAttribute xmi:id="__pc30GtVEe-cNcWgzcLmAA" name="description"/>
+      <ownedAttribute xmi:id="__xnVUGtVEe-cNcWgzcLmAA" name="score"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3dN2MGtVEe-cNcWgzcLmAA" name="Receiver">
+      <ownedAttribute xmi:id="_3dN2MWtVEe-cNcWgzcLmAA" name="name"/>
+      <ownedAttribute xmi:id="_3dN2MmtVEe-cNcWgzcLmAA" name="phoneNumber"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3nd-YGtVEe-cNcWgzcLmAA" name="Inbox">
+      <ownedAttribute xmi:id="_3nd-YWtVEe-cNcWgzcLmAA" name="number"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XUuvoGt9Ee-rtJWjv9ArUg" name="Score"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XvR9oGt9Ee-rtJWjv9ArUg" name="Control"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X6wN0Gt9Ee-rtJWjv9ArUg" name="Lives"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YYGRIGt9Ee-rtJWjv9ArUg" name="Record"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YYGRIWt9Ee-rtJWjv9ArUg" name="Pay"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YYGRImt9Ee-rtJWjv9ArUg" name="Determine"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mUvLIGt9Ee-rtJWjv9ArUg" name="Request"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mUvLIWt9Ee-rtJWjv9ArUg" name="Locate"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mUvLImt9Ee-rtJWjv9ArUg" name="Accept"/>
+  </packagedElement>
+</uml:Model>

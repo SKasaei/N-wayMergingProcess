@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dHGM0F9vEeyHGut-QakN3w" name="V1">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Olu4oGtQEe-cNcWgzcLmAA" name="Team7">
+    <packagedElement xmi:type="uml:Class" xmi:id="_dVwh8GtREe-cNcWgzcLmAA" name="Interaction history">
+      <ownedAttribute xmi:id="_eYfxUGtREe-cNcWgzcLmAA" name="date"/>
+      <ownedAttribute xmi:id="_erXqAGtREe-cNcWgzcLmAA" name="discription"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fS6yMGtREe-cNcWgzcLmAA" name="Customer interaction history">
+      <ownedAttribute xmi:id="_fS6yMWtREe-cNcWgzcLmAA" name="order"/>
+      <ownedAttribute xmi:id="_fS6yMmtREe-cNcWgzcLmAA" name="value"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gChDIGtREe-cNcWgzcLmAA" name="Shipping interaction history">
+      <ownedAttribute xmi:id="_gChDIWtREe-cNcWgzcLmAA" name="assignment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gChqMGtREe-cNcWgzcLmAA" name="Ticket">
+      <ownedAttribute xmi:id="_gChqMWtREe-cNcWgzcLmAA" name="date"/>
+      <ownedAttribute xmi:id="_gChqMmtREe-cNcWgzcLmAA" name="senderId"/>
+      <ownedAttribute xmi:id="_gChqM2tREe-cNcWgzcLmAA" name="agentId"/>
+      <ownedAttribute xmi:id="_gChqNGtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_EMlyMGteEe-cNcWgzcLmAA" name="description"/>
+      <ownedAttribute xmi:id="_EMlyMWteEe-cNcWgzcLmAA" name="isUrgent"/>
+      <ownedAttribute xmi:id="_G0b-MGteEe-cNcWgzcLmAA" name="priority"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gIZosGtREe-cNcWgzcLmAA" name="Transaction">
+      <ownedAttribute xmi:id="_gIZosWtREe-cNcWgzcLmAA" name="date"/>
+      <ownedAttribute xmi:id="_gIZosmtREe-cNcWgzcLmAA" name="type"/>
+      <ownedAttribute xmi:id="_gIZos2tREe-cNcWgzcLmAA" name="date"/>
+      <ownedAttribute xmi:id="_gIZotGtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_L49oAGteEe-cNcWgzcLmAA" name="currency"/>
+      <ownedAttribute xmi:id="_L49oAWteEe-cNcWgzcLmAA" name="fee"/>
+      <ownedAttribute xmi:id="_L49oAmteEe-cNcWgzcLmAA" name="source"/>
+      <ownedAttribute xmi:id="_QQea0GteEe-cNcWgzcLmAA" name="destination"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gIZotWtREe-cNcWgzcLmAA" name="Announcement">
+      <ownedAttribute xmi:id="_gIZotmtREe-cNcWgzcLmAA" name="title"/>
+      <ownedAttribute xmi:id="_gIZot2tREe-cNcWgzcLmAA" name="isUrgent"/>
+      <ownedAttribute xmi:id="_gIZouGtREe-cNcWgzcLmAA" name="attachment"/>
+      <ownedAttribute xmi:id="_gIZouWtREe-cNcWgzcLmAA" name="status"/>
+      <ownedAttribute xmi:id="_XMd8kGteEe-cNcWgzcLmAA" name="tag"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gOCWoGtREe-cNcWgzcLmAA" name="Managment">
+      <ownedAttribute xmi:id="_gOCWoWtREe-cNcWgzcLmAA" name="level"/>
+      <ownedAttribute xmi:id="_gOCWomtREe-cNcWgzcLmAA" name="status"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gOCWpWtREe-cNcWgzcLmAA" name="Financial">
+      <ownedAttribute xmi:id="_gOCWpmtREe-cNcWgzcLmAA" name="balance"/>
+      <ownedAttribute xmi:id="_gOCWp2tREe-cNcWgzcLmAA" name="cardNumber"/>
+      <ownedAttribute xmi:id="_gOCWqGtREe-cNcWgzcLmAA" name="insurance"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gcykUGtREe-cNcWgzcLmAA" name="Admin">
+      <ownedAttribute xmi:id="_gcykUWtREe-cNcWgzcLmAA" name="name"/>
+      <ownedAttribute xmi:id="_gcykUmtREe-cNcWgzcLmAA" name="nationalNumber"/>
+      <ownedAttribute xmi:id="_gcykU2tREe-cNcWgzcLmAA" name="gender"/>
+      <ownedAttribute xmi:id="_gcykVGtREe-cNcWgzcLmAA" name="birthDate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gcykVWtREe-cNcWgzcLmAA" name="User">
+      <ownedAttribute xmi:id="_gcykVmtREe-cNcWgzcLmAA" name="active"/>
+      <ownedAttribute xmi:id="_gcykV2tREe-cNcWgzcLmAA" name="access degree"/>
+      <ownedAttribute xmi:id="_gcykWGtREe-cNcWgzcLmAA" name="email"/>
+      <ownedAttribute xmi:id="_gcykWWtREe-cNcWgzcLmAA" name="phoneNumber"/>
+      <ownedAttribute xmi:id="_qPHuIGteEe-cNcWgzcLmAA" name="address"/>
+      <ownedAttribute xmi:id="_qPHuIWteEe-cNcWgzcLmAA" name="photo"/>
+      <ownedAttribute xmi:id="_sNXjgGteEe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_sNXjgWteEe-cNcWgzcLmAA" name="password"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_21TA8GtdEe-cNcWgzcLmAA" name="support">
+      <ownedAttribute xmi:id="_21TA8WtdEe-cNcWgzcLmAA" name="name"/>
+      <ownedAttribute xmi:id="_21TA8mtdEe-cNcWgzcLmAA" name="gender"/>
+      <ownedAttribute xmi:id="_21TA82tdEe-cNcWgzcLmAA" name="birthDate"/>
+      <ownedAttribute xmi:id="_21TA9GtdEe-cNcWgzcLmAA" name="gender"/>
+      <ownedAttribute xmi:id="_2eywAGteEe-cNcWgzcLmAA" name="nationalNumber"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_21TA9WtdEe-cNcWgzcLmAA" name="Address">
+      <ownedAttribute xmi:id="_21TA9mtdEe-cNcWgzcLmAA" name="city"/>
+      <ownedAttribute xmi:id="_21TA92tdEe-cNcWgzcLmAA" name="building"/>
+      <ownedAttribute xmi:id="_21TA-GtdEe-cNcWgzcLmAA" name="street"/>
+      <ownedAttribute xmi:id="_21TA-WtdEe-cNcWgzcLmAA" name="postalCode"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_21TA-mtdEe-cNcWgzcLmAA" name="Customer">
+      <ownedAttribute xmi:id="_21TA-2tdEe-cNcWgzcLmAA" name="birthDate"/>
+      <ownedAttribute xmi:id="_21TA_GtdEe-cNcWgzcLmAA" name="gender"/>
+      <ownedAttribute xmi:id="_21TA_WtdEe-cNcWgzcLmAA" name="name"/>
+      <ownedAttribute xmi:id="_21TA_mtdEe-cNcWgzcLmAA" name="nationalNumber"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_21TA_2tdEe-cNcWgzcLmAA" name="Order">
+      <ownedAttribute xmi:id="_21TBAGtdEe-cNcWgzcLmAA" name="location"/>
+      <ownedAttribute xmi:id="_21TBAWtdEe-cNcWgzcLmAA" name="cost"/>
+      <ownedAttribute xmi:id="_21TBAmtdEe-cNcWgzcLmAA" name="origin"/>
+      <ownedAttribute xmi:id="_21TBA2tdEe-cNcWgzcLmAA" name="destination"/>
+      <ownedAttribute xmi:id="_Eupg8GtfEe-cNcWgzcLmAA" name="isExpire"/>
+      <ownedAttribute xmi:id="_Eupg8WtfEe-cNcWgzcLmAA" name="type"/>
+      <ownedAttribute xmi:id="_Eupg8mtfEe-cNcWgzcLmAA" name="note"/>
+      <ownedAttribute xmi:id="_J2lrIGtfEe-cNcWgzcLmAA" name="assurance"/>
+      <ownedAttribute xmi:id="_J-V48GtfEe-cNcWgzcLmAA" name="status"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_B1F54GtfEe-cNcWgzcLmAA" name="Package">
+      <ownedAttribute xmi:id="_B1F54WtfEe-cNcWgzcLmAA" name="type"/>
+      <ownedAttribute xmi:id="_B1F54mtfEe-cNcWgzcLmAA" name="dimension"/>
+      <ownedAttribute xmi:id="_B1F542tfEe-cNcWgzcLmAA" name="weight"/>
+      <ownedAttribute xmi:id="_B1F55GtfEe-cNcWgzcLmAA" name="condition"/>
+      <ownedAttribute xmi:id="_SZaAwGtfEe-cNcWgzcLmAA" name="password"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_B8PqwGtfEe-cNcWgzcLmAA" name="Locker">
+      <ownedAttribute xmi:id="_B8PqwWtfEe-cNcWgzcLmAA" name="fee"/>
+      <ownedAttribute xmi:id="_B8PqwmtfEe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_B8Pqw2tfEe-cNcWgzcLmAA" name="boxInSide"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GiJRUGt_Ee-rtJWjv9ArUg" name="GetStatus"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G7xSQGt_Ee-rtJWjv9ArUg" name="Increase"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HDN-EGt_Ee-rtJWjv9ArUg" name="Decrease"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HKXu8Gt_Ee-rtJWjv9ArUg" name="Receive"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_H2nJ4Gt_Ee-rtJWjv9ArUg" name="Deliver"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_H2nJ4Wt_Ee-rtJWjv9ArUg" name="Accept"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_H2nJ4mt_Ee-rtJWjv9ArUg" name="Move"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_H2nJ42t_Ee-rtJWjv9ArUg" name="Cancel"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ISxhcGt_Ee-rtJWjv9ArUg" name="Showcargos"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ISxhcWt_Ee-rtJWjv9ArUg" name="ShowState"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ISxhcmt_Ee-rtJWjv9ArUg" name="Order"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dHGM0F9vEeyHGut-QakN3w" name="V1">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Olu4oGtQEe-cNcWgzcLmAA" name="Team6">
+    <packagedElement xmi:type="uml:Class" xmi:id="_dVwh8GtREe-cNcWgzcLmAA" name="Message">
+      <ownedAttribute xmi:id="_eYfxUGtREe-cNcWgzcLmAA" name="text"/>
+      <ownedAttribute xmi:id="_erXqAGtREe-cNcWgzcLmAA" name="date"/>
+      <ownedAttribute xmi:id="_e3urAGtREe-cNcWgzcLmAA" name="userName"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fS6yMGtREe-cNcWgzcLmAA" name="User">
+      <ownedAttribute xmi:id="_fS6yMWtREe-cNcWgzcLmAA" name="name"/>
+      <ownedAttribute xmi:id="_fS6yMmtREe-cNcWgzcLmAA" name="userName"/>
+      <ownedAttribute xmi:id="_fS6yM2tREe-cNcWgzcLmAA" name="email"/>
+      <ownedAttribute xmi:id="_fS6yNGtREe-cNcWgzcLmAA" name="password"/>
+      <ownedAttribute xmi:id="_V2gEoGtdEe-cNcWgzcLmAA" name="phoneNumber"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gChDIGtREe-cNcWgzcLmAA" name="Station">
+      <ownedAttribute xmi:id="_gChDIWtREe-cNcWgzcLmAA" name="location"/>
+      <ownedAttribute xmi:id="_gChDImtREe-cNcWgzcLmAA" name="number"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gChqMGtREe-cNcWgzcLmAA" name="Post office">
+      <ownedAttribute xmi:id="_gChqMWtREe-cNcWgzcLmAA" name="capacity"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gIZosGtREe-cNcWgzcLmAA" name="Inbox">
+      <ownedAttribute xmi:id="_gIZosWtREe-cNcWgzcLmAA" name="length"/>
+      <ownedAttribute xmi:id="_gIZosmtREe-cNcWgzcLmAA" name="width"/>
+      <ownedAttribute xmi:id="_gIZos2tREe-cNcWgzcLmAA" name="height"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gIZotWtREe-cNcWgzcLmAA" name="Admin">
+      <ownedAttribute xmi:id="_gIZotmtREe-cNcWgzcLmAA" name="id"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gOCWoGtREe-cNcWgzcLmAA" name="Customer">
+      <ownedAttribute xmi:id="_gOCWoWtREe-cNcWgzcLmAA" name="parcelNumber"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gOCWpWtREe-cNcWgzcLmAA" name="Package">
+      <ownedAttribute xmi:id="_gOCWpmtREe-cNcWgzcLmAA" name="location"/>
+      <ownedAttribute xmi:id="_gOCWp2tREe-cNcWgzcLmAA" name="timeEstimate"/>
+      <ownedAttribute xmi:id="_gOCWqGtREe-cNcWgzcLmAA" name="volume"/>
+      <ownedAttribute xmi:id="_gOCWqWtREe-cNcWgzcLmAA" name="origin"/>
+      <ownedAttribute xmi:id="_rg4GYGtdEe-cNcWgzcLmAA" name="destination"/>
+      <ownedAttribute xmi:id="_rg4GYWtdEe-cNcWgzcLmAA" name="cost"/>
+      <ownedAttribute xmi:id="_rg4GYmtdEe-cNcWgzcLmAA" name="fastSending"/>
+      <ownedAttribute xmi:id="_vmGPUGtdEe-cNcWgzcLmAA" name="price"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tF78sGt-Ee-rtJWjv9ArUg" name="Get"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ta8jYGt-Ee-rtJWjv9ArUg" name="Add"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tk6-wGt-Ee-rtJWjv9ArUg" name="View"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tuqJkGt-Ee-rtJWjv9ArUg" name="Send"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_t3Fs0Gt-Ee-rtJWjv9ArUg" name="Edit"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uYw2gGt-Ee-rtJWjv9ArUg" name="Report"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uYw2gWt-Ee-rtJWjv9ArUg" name="Request"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uYw2gmt-Ee-rtJWjv9ArUg" name="Remove"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uYw2g2t-Ee-rtJWjv9ArUg" name="Change"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uYw2hGt-Ee-rtJWjv9ArUg" name="Deliver"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ugWsQGt-Ee-rtJWjv9ArUg" name="Complete"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ugWsQWt-Ee-rtJWjv9ArUg" name="Block"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ugWsQmt-Ee-rtJWjv9ArUg" name="Give"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ugWsQ2t-Ee-rtJWjv9ArUg" name="Delete"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ugWsRGt-Ee-rtJWjv9ArUg" name="Complain"/>
+  </packagedElement>
+</uml:Model>

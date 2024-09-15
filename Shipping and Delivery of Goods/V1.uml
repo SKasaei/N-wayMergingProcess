@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dHGM0F9vEeyHGut-QakN3w" name="V1">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Olu4oGtQEe-cNcWgzcLmAA" name="Team1">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Bpbk0GtREe-cNcWgzcLmAA" name="Transaction">
+      <ownedAttribute xmi:id="_EQBzoGtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_E_8NoGtREe-cNcWgzcLmAA" name="price"/>
+      <ownedAttribute xmi:id="_FDjiUGtREe-cNcWgzcLmAA" name="date"/>
+      <ownedAttribute xmi:id="_ForBkGtREe-cNcWgzcLmAA" name="type"/>
+      <ownedAttribute xmi:id="_SpwSQGtREe-cNcWgzcLmAA" name="sourceBankAccount"/>
+      <ownedAttribute xmi:id="_Spw5UGtREe-cNcWgzcLmAA" name="destinationBankAccount"/>
+      <ownedAttribute xmi:id="_WeBOEGtREe-cNcWgzcLmAA" name="description"/>
+      <ownedAttribute xmi:id="_WeBOEWtREe-cNcWgzcLmAA" name="senderName"/>
+      <ownedAttribute xmi:id="_ZKe0UGtREe-cNcWgzcLmAA" name="receiverName"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dVwh8GtREe-cNcWgzcLmAA" name="Wallet">
+      <ownedAttribute xmi:id="_eYfxUGtREe-cNcWgzcLmAA" name="balance"/>
+      <ownedAttribute xmi:id="_erXqAGtREe-cNcWgzcLmAA" name="transactionHistory"/>
+      <ownedAttribute xmi:id="_e3urAGtREe-cNcWgzcLmAA" name="discounts"/>
+      <ownedAttribute xmi:id="_e-SmAGtREe-cNcWgzcLmAA" name="bankAccounts"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fS6yMGtREe-cNcWgzcLmAA" name="User">
+      <ownedAttribute xmi:id="_fS6yMWtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_fS6yMmtREe-cNcWgzcLmAA" name="name"/>
+      <ownedAttribute xmi:id="_fS6yM2tREe-cNcWgzcLmAA" name="phoneNumber"/>
+      <ownedAttribute xmi:id="_fS6yNGtREe-cNcWgzcLmAA" name="userName"/>
+      <ownedAttribute xmi:id="_IDbXUGtSEe-cNcWgzcLmAA" name="gender"/>
+      <ownedAttribute xmi:id="_IOGWQGtSEe-cNcWgzcLmAA" name="wallet"/>
+      <ownedAttribute xmi:id="_NtxrAGtSEe-cNcWgzcLmAA" name="age"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gChDIGtREe-cNcWgzcLmAA" name="Report">
+      <ownedAttribute xmi:id="_gChDIWtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_gChDImtREe-cNcWgzcLmAA" name="description"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gChqMGtREe-cNcWgzcLmAA" name="Order">
+      <ownedAttribute xmi:id="_gChqMWtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_gChqMmtREe-cNcWgzcLmAA" name="dateOfRegistration"/>
+      <ownedAttribute xmi:id="_gChqM2tREe-cNcWgzcLmAA" name="senderReceiverSpec"/>
+      <ownedAttribute xmi:id="_gChqNGtREe-cNcWgzcLmAA" name="shipperType"/>
+      <ownedAttribute xmi:id="_XSm3QGtSEe-cNcWgzcLmAA" name="howToSend"/>
+      <ownedAttribute xmi:id="_XZmQEGtSEe-cNcWgzcLmAA" name="orderAmount"/>
+      <ownedAttribute xmi:id="_XgIV4GtSEe-cNcWgzcLmAA" name="price"/>
+      <ownedAttribute xmi:id="_XmwiUGtSEe-cNcWgzcLmAA" name="reservveBase"/>
+      <ownedAttribute xmi:id="_XtSoIGtSEe-cNcWgzcLmAA" name="deliveryTime"/>
+      <ownedAttribute xmi:id="_ZU0moGtSEe-cNcWgzcLmAA" name="trackingCode"/>
+      <ownedAttribute xmi:id="_ZU0moWtSEe-cNcWgzcLmAA" name="package"/>
+      <ownedAttribute xmi:id="_ZU0momtSEe-cNcWgzcLmAA" name="reports"/>
+      <ownedAttribute xmi:id="_jQPG4GtSEe-cNcWgzcLmAA" name="sender"/>
+      <ownedAttribute xmi:id="_jayxEGtSEe-cNcWgzcLmAA" name="receiver"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gIZosGtREe-cNcWgzcLmAA" name="Package">
+      <ownedAttribute xmi:id="_gIZosWtREe-cNcWgzcLmAA" name="dimension"/>
+      <ownedAttribute xmi:id="_gIZosmtREe-cNcWgzcLmAA" name="weight"/>
+      <ownedAttribute xmi:id="_gIZos2tREe-cNcWgzcLmAA" name="productMaterial"/>
+      <ownedAttribute xmi:id="_gIZotGtREe-cNcWgzcLmAA" name="size"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gIZotWtREe-cNcWgzcLmAA" name="Station">
+      <ownedAttribute xmi:id="_gIZotmtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_gIZot2tREe-cNcWgzcLmAA" name="location"/>
+      <ownedAttribute xmi:id="_gIZouGtREe-cNcWgzcLmAA" name="type"/>
+      <ownedAttribute xmi:id="_gIZouWtREe-cNcWgzcLmAA" name="capacity"/>
+      <ownedAttribute xmi:id="_1RWi8GtSEe-cNcWgzcLmAA" name="orderDatabase"/>
+      <ownedAttribute xmi:id="_1RWi8WtSEe-cNcWgzcLmAA" name="dimension"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gOCWoGtREe-cNcWgzcLmAA" name="Location">
+      <ownedAttribute xmi:id="_gOCWoWtREe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_gOCWomtREe-cNcWgzcLmAA" name="latitude"/>
+      <ownedAttribute xmi:id="_gOCWo2tREe-cNcWgzcLmAA" name="logitude"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gOCWpWtREe-cNcWgzcLmAA" name="Receiver">
+      <ownedAttribute xmi:id="_gOCWpmtREe-cNcWgzcLmAA" name="infoEdit"/>
+      <ownedAttribute xmi:id="_gOCWp2tREe-cNcWgzcLmAA" name="history"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gcykUGtREe-cNcWgzcLmAA" name="Employee">
+      <ownedAttribute xmi:id="_gcykUWtREe-cNcWgzcLmAA" name="workShift"/>
+      <ownedAttribute xmi:id="_gcykUmtREe-cNcWgzcLmAA" name="score"/>
+      <ownedAttribute xmi:id="_gcykU2tREe-cNcWgzcLmAA" name="personSide"/>
+      <ownedAttribute xmi:id="_gcykVGtREe-cNcWgzcLmAA" name="salary"/>
+      <ownedAttribute xmi:id="_K3aFYGtTEe-cNcWgzcLmAA" name="activitySection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gcykVWtREe-cNcWgzcLmAA" name="Sender">
+      <ownedAttribute xmi:id="_gcykVmtREe-cNcWgzcLmAA" name="history"/>
+      <ownedAttribute xmi:id="_gcykV2tREe-cNcWgzcLmAA" name="location"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9OxFcGtSEe-cNcWgzcLmAA" name="Admin">
+      <ownedAttribute xmi:id="_9OxFcWtSEe-cNcWgzcLmAA" name="access"/>
+      <ownedAttribute xmi:id="_9OxFcmtSEe-cNcWgzcLmAA" name="rearuitment"/>
+      <ownedAttribute xmi:id="_9OxFc2tSEe-cNcWgzcLmAA" name="managerControl"/>
+      <ownedAttribute xmi:id="_9OxFdGtSEe-cNcWgzcLmAA" name="policy"/>
+      <ownedAttribute xmi:id="_VXvQkGtTEe-cNcWgzcLmAA" name="makeDeal"/>
+      <ownedAttribute xmi:id="_VXvQkWtTEe-cNcWgzcLmAA" name="manageMainHouse"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9OxFdWtSEe-cNcWgzcLmAA" name="Worker">
+      <ownedAttribute xmi:id="_9OxFdmtSEe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_9OxFd2tSEe-cNcWgzcLmAA" name="BHCode"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9OxFemtSEe-cNcWgzcLmAA" name="Shipper">
+      <ownedAttribute xmi:id="_9OxFe2tSEe-cNcWgzcLmAA" name="shippingReport"/>
+      <ownedAttribute xmi:id="_9OxFfGtSEe-cNcWgzcLmAA" name="workingLocation"/>
+      <ownedAttribute xmi:id="_9OxFfWtSEe-cNcWgzcLmAA" name="score"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fCuvMGtTEe-cNcWgzcLmAA" name="Registration">
+      <ownedAttribute xmi:id="_fCuvMWtTEe-cNcWgzcLmAA" name="nationalCode"/>
+      <ownedAttribute xmi:id="_fCuvMmtTEe-cNcWgzcLmAA" name="insuranceCode"/>
+      <ownedAttribute xmi:id="_fCuvM2tTEe-cNcWgzcLmAA" name="systemCode"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fMrVYGtTEe-cNcWgzcLmAA" name="Warehouse">
+      <ownedAttribute xmi:id="_fMrVYWtTEe-cNcWgzcLmAA" name="id"/>
+      <ownedAttribute xmi:id="_fMrVYmtTEe-cNcWgzcLmAA" name="location"/>
+      <ownedAttribute xmi:id="_fMrVY2tTEe-cNcWgzcLmAA" name="employee"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VOFosGt8Ee-rtJWjv9ArUg" name="Report"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VrSiEGt8Ee-rtJWjv9ArUg" name="SubmitOrder"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Vze0wGt8Ee-rtJWjv9ArUg" name="Suggest"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WnxYcGt8Ee-rtJWjv9ArUg" name="AssigningShipper"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WnxYcWt8Ee-rtJWjv9ArUg" name="ShippingToReceiver"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WnxYcmt8Ee-rtJWjv9ArUg" name="Shipping"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XUUVYGt8Ee-rtJWjv9ArUg" name="SubmitNewShipping"/>
+  </packagedElement>
+</uml:Model>
